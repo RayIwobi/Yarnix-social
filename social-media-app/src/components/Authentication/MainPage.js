@@ -8,8 +8,8 @@ function MainPage() {
 
   axios.defaults.withCredentials = true
   const handleLogout = () => {
-   //axios.get('https://nediecom.onrender.com/auth/logout')
-     axios.get('http://localhost:12000/auth/logout')
+   axios.get('https://yarnix-social.onrender.com/auth/logout')
+    // axios.get('http://localhost:12000/auth/logout')
     .then(res => {
       if(res.data.status){
         navigate('/login')

@@ -21,8 +21,8 @@ function Login() {
         useEffect(() => {
             const checkAuth = async () => {
                 try{
-                     //  const res = await axios.get('https://nediecom.onrender.com/auth/verify', {
-                    const res = await axios.get('http://localhost:12000/auth/verify', {
+                    const res = await axios.get('https://yarnix-social.onrender.com/auth/verify', {
+                  //  const res = await axios.get('http://localhost:12000/auth/verify', {
                         withCredentials:true
                     })
                     if (res.data.status === true){
@@ -46,8 +46,8 @@ function Login() {
                 toast.warning("You need to add your email")
             }
             e.preventDefault()
-          //   axios.post('https://nediecom.onrender.com/auth/login',{email, password}, {withCredentials: true})
-            axios.post('http://localhost:12000/auth/login',{email, password})
+             axios.post('https://yarnix-social.onrender.com/auth/login',{email, password}, {withCredentials: true})
+            //axios.post('http://localhost:12000/auth/login',{email, password})
             .then((res) => {
                 if(res.data.status){
                     console.log(res.data.status)

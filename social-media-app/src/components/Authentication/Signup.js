@@ -22,8 +22,8 @@ const Signup = () => {
     useEffect(() => {
                 const checkAuth = async () => {
                     try{
-                       // const res = await axios.get('https://nediecom.onrender.com/auth/verify', {
-                        const res = await axios.get('http://localhost:12000/auth/verify', {
+                        const res = await axios.get('https://yarnix-social.onrender.com/auth/verify', {
+                        //const res = await axios.get('http://localhost:12000/auth/verify', {
                             withCredentials:true
                         })
                         if (res.data.status === true){
@@ -40,8 +40,8 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-       // axios.post('https://nediecom.onrender.com/auth/signup', {username, email, password, phone, address})
-        axios.post('http://localhost:12000/auth/signup', {username, email, password, phone, address})
+        axios.post('https://yarnix-social.onrender.com/auth/signup', {username, email, password, phone, address})
+       // axios.post('http://localhost:12000/auth/signup', {username, email, password, phone, address})
         .then((res) => {
             if(res.data.status){
                 // toast.success('user registered')

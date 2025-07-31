@@ -12,8 +12,8 @@ function Dashboard() {
 
       axios.defaults.withCredentials = true
      useEffect(() => {
-        // axios.get('https://nediecom.onrender.com/auth/verify' ,{ withCredentials: true })
-       axios.get('http://localhost:12000/auth/verify' ,{ withCredentials: true })
+         axios.get('https://yarnix-social.onrender.com/auth/verify' ,{ withCredentials: true })
+       //axios.get('http://localhost:12000/auth/verify' ,{ withCredentials: true })
         .then((res) => {
             if(res.data.status){
 
@@ -27,8 +27,8 @@ function Dashboard() {
 
   // Step 1: Get the current user 
   useEffect(() => {
-    // axios.get('https://nediecom.onrender.com/auth/dashboard', { withCredentials: true })
-   axios.get('http://localhost:12000/auth/dashboard', { withCredentials: true })
+     axios.get('https://yarnix-social.onrender.com/auth/dashboard', { withCredentials: true })
+   //axios.get('http://localhost:12000/auth/dashboard', { withCredentials: true })
       .then(res => {
         setCurrentUser(res.data);
       })
@@ -41,8 +41,8 @@ function Dashboard() {
   useEffect(() => {
     if (!currentUser?.email) return;
 
- //axios.get(`https://nediecom.onrender.com/orders/${currentUser.email}`, { withCredentials: true })
-       axios.get(`http://localhost:12000/orders/${currentUser.email}`, { withCredentials: true })
+     axios.get(`https://yarnix-social.onrender.com/orders/${currentUser.email}`, { withCredentials: true })
+    //   axios.get(`http://localhost:12000/orders/${currentUser.email}`, { withCredentials: true })
       .then(res => {
         setOrders(res.data);
       })
@@ -54,8 +54,8 @@ function Dashboard() {
 
    axios.defaults.withCredentials = true
     const handleLogout = () => {
-     //axios.get('https://nediecom.onrender.com/auth/logout' , { withCredentials: true })
-         axios.get('http://localhost:12000/auth/logout' , { withCredentials: true })
+     axios.get('https://yarnix-social.onrender.com/auth/logout' , { withCredentials: true })
+      //axios.get('http://localhost:12000/auth/logout' , { withCredentials: true })
       .then(res => {
         if(res.data.status){
           navigate('/')
