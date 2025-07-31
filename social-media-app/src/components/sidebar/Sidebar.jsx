@@ -25,7 +25,7 @@ function Sidebar() {
            axios.get('https://yarnix-social.onrender.com/auth/dashboard', { withCredentials: true })
        // axios.get('http://localhost:10000/auth/dashboard', { withCredentials: true })
             .then(res => {
-              setCurrentUser(res.data);
+              setCurrentUser(res.data.status);
             })
             .catch(err => {
               console.error('Error fetching user:', err);
