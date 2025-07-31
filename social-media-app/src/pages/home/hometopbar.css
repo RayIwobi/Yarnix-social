@@ -1,0 +1,46 @@
+.mainContainer{
+    background-color: #2a447d;
+    width: 100vw;
+    height: 50px;
+}
+
+.inncerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-top: 10px;
+}
+
+.logonamephrase{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: white;
+}
+
+.logonamephrase h3{
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+h2{
+    color: white;
+}
+
+.helpabout h3{
+    color: white;
+    padding-right: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.helpabout{
+    display: flex;
+    align-items: center;
+}
+

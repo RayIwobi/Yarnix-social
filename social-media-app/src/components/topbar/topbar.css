@@ -1,0 +1,157 @@
+.topbarContainer{
+    height: 50px;
+    width: 100%;
+    /* background-color: #1877f2; */
+    background-color: #2a447d;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topbarContainer a{
+    text-decoration:none;
+}
+
+@media screen and (max-width:600px){
+    .topbarContainer{
+        display: block;
+        max-width: 100vw;
+        height: 100px;
+        background-color: #1877f2;
+        padding: 10px;
+    }
+}
+
+.topbarLeft{
+    flex: 3;
+}
+
+.mobile-dropdown{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .mobile-dropdown{
+        display: block;
+    }
+}
+
+.searchbar{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:600px){
+    .searchbar{
+        width: 70%;
+        height: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.searchIcon{
+    font-size: 20px !important;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.searchinput{
+    border: none;
+    width: 90%;
+    height: 30px;
+    margin-top: 16px;
+    font-size: 15px;
+    font-family:'Libre Baskerville';
+
+}
+
+.searchinput:focus{
+    outline: none;
+}
+
+
+
+
+.logo{
+    font-size: 24px;
+    margin-left:20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+}
+
+.topbarCenter{
+    flex: 5;
+}
+
+.topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.topbarLink{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.topbarLinks a{
+    text-decoration:none;
+}
+
+.topbarIcons{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.topbarIconItem{
+    margin-right: 15px;
+    cursor:pointer;
+    position:relative;
+    color: white;
+}
+
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.topbarimg{
+     width:32px;
+     height:32px;
+     border-radius: 20px;
+     object-fit: cover;
+     cursor: pointer;
+}
+
+.topbarIconBadge{
+    color: white;
+}
+
+

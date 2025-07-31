@@ -1,0 +1,32 @@
+.sliderContainer {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+@media screen and (max-width:600px) {
+  .sliderContainer {
+    width: 100vw;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.sliderTrack {
+  display: flex;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slidecontent {
+  width: 100%;
+  object-fit:contain;
+  border-radius: 10px;
+}
