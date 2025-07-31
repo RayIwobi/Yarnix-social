@@ -16,8 +16,8 @@ function Topbar() {
 
   axios.defaults.withCredentials = true
       const handleLogout = () => {
-        // axios.get('https://nediecom.onrender.com/auth/logout' , { withCredentials: true })
-         axios.get('http://localhost:12000/auth/logout' , { withCredentials: true })
+      axios.get('https://yarnix-social.onrender.com/auth/logout' , { withCredentials: true })
+           // axios.get('http://localhost:12000/auth/logout' , { withCredentials: true })
         .then(res => {
           if(res.data.status){
             navigate('/')
