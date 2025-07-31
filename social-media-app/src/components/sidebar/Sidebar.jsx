@@ -22,8 +22,8 @@ function Sidebar() {
         const [currentUser, setCurrentUser] = useState('')
         
         useEffect(() => {
-          // axios.get('https://nediecom.onrender.com/auth/dashboard', { withCredentials: true })
-        axios.get('http://localhost:10000/auth/dashboard', { withCredentials: true })
+           axios.get('https://yarnix-social.onrender.com/auth/dashboard', { withCredentials: true })
+       // axios.get('http://localhost:10000/auth/dashboard', { withCredentials: true })
             .then(res => {
               setCurrentUser(res.data);
             })
