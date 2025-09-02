@@ -32,7 +32,7 @@ function Home() {
             </div>
        
         </div >
-             <div className='profilepic'>
+             <div className='profilepic'> 
                 <img src={rayicon} alt='ray' /> 
             </div>
          </div >

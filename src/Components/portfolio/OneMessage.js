@@ -48,9 +48,6 @@ const MessageDisplay = () => {
         Show Next Message
       </button>
 
-      {/* {currentIndex >= messages.length && (
-        <p className="mt-3 text-green-600">No more messages!</p>
-      )} */}
     </div>
   );
 };

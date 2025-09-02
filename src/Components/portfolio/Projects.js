@@ -54,7 +54,7 @@ function Projects() {
                 </div>
             </div>
             <div className='projectsContainer'>
-                <img src={yarnix} alt='nedifoods-image' />
+                <img src={yarnix} alt='yarnix' />
                 <h2>Yarnix social media App</h2>
                 <p>
                     Yarnix is a full-stack social media platform where users can post, comment, like, and manage profiles—similar to Facebook.
@@ -63,7 +63,7 @@ function Projects() {
                     Backend includes Node.js, Express, MongoDB, JWT Auth, and Cloudinary for image uploads.
                 </p>
                 <div className='projects-links'>
-                        <Link><img src={github} alt='' style={{width:'20px', height:'20px'}} />&nbsp;Github</Link>
+                        <Link to="https://github.com/RayIwobi/Yarnix-social"><img src={github} alt='' style={{width:'20px', height:'20px'}} />&nbsp;Github</Link>
                         <Link><img src={web} alt='' style={{width:'20px', height:'20px'}} />&nbsp;Live website</Link>
                 </div>
             </div>
@@ -71,7 +71,7 @@ function Projects() {
 
             <div className='over-Container'>
             <div className='projectsContainer'>
-                <img src={movieplace} alt='nedifoods-image' />
+                <img src={movieplace} alt='movieimage' />
                 <h2>Movieplace API App</h2>
                 <p>
                     Movie API App is a React-based app that lets users search for movies and view detailed info fetched from the OMDb API.
@@ -86,7 +86,7 @@ function Projects() {
             </div>
             
             <div className='projectsContainer'>
-                <img src={meter} alt='nedifoods-image' />
+                <img src={meter} alt='metering-image' />
                 <h2>Metering Website </h2>
                 <p>
                     Metering and Instrumentation Website showcases products, services, and technical information related to industrial metering and control systems.
@@ -104,7 +104,7 @@ function Projects() {
 
             <div className='over-Container'>
             <div className='projectsContainer'>
-                <img src={login} alt='nedifoods-image' />
+                <img src={login} alt='map-image' />
                 <h2>Map Pinning App</h2>
                 <p>
                     Map Pinning App lets users drop pins on a map, add reviews to favorite locations, and save them to a database.
@@ -129,7 +129,7 @@ function Projects() {
                 </p>
                 <div className='projects-links'>
                     <Link to='https://github.com/RayIwobi/product-listing'><img src={github} alt='' style={{width:'20px', height:'20px'}} />&nbsp;Github</Link>
-                    <Link to='https://productlisting.valorprojects.com.ng/'><img src={web} alt='' style={{width:'20px', height:'20px'}} />&nbsp;Live website</Link>
+                    <Link to='https://product-listing-ecru-kappa.vercel.app/'><img src={web} alt='' style={{width:'20px', height:'20px'}} />&nbsp;Live website</Link>
                 </div>
             </div>
             
